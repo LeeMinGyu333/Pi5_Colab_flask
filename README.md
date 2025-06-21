@@ -20,5 +20,8 @@ cd ~
 curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && \
   echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list && \
   sudo apt update && sudo apt install ngrok
-./ngrok authtoken 2yoIjXbMUtHCNk8MgxhKZMxODGd_7EiTpsT4Frm5CZVx47sit
-./ngrok http 5000
+ngrok config add-authtoken 2yoIjXbMUtHCNk8MgxhKZMxODGd_7EiTpsT4Frm5CZVx47sit
+ngrok http 5000
+
+# u can see forwarding :" https:~~-free.app", copy https~app and paste to colab code
+VIDEO_URL = "https~~free.app/video_feed"
