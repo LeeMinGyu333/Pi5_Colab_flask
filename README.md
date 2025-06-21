@@ -1,1 +1,15 @@
 # Pi5_Colab_flask
+# Ubuntu libraries
+pip install flask
+sudo apt update
+sudo apt install python3-opencv
+sudo apt install python3-gpiozero
+
+#colab
+!pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+!git clone https://github.com/ultralytics/yolov5
+%cd yolov5
+!pip install -r requirements.txt
+pip install deep_sort_realtime
+pip install opencv-python
+pip install requests
