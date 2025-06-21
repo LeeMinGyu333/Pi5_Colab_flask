@@ -22,3 +22,5 @@ unzip ngrok-stable-linux-arm64.zip
 chmod +x ngrok
 ./ngrok version
 /ngrok config add-aututoken^C
+./ngrok authtoken 2yoIjXbMUtHCNk8MgxhKZMxODGd_7EiTpsT4Frm5CZVx47sit
+./ngrok http 5000
