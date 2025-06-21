@@ -13,3 +13,12 @@ sudo apt install python3-gpiozero
 pip install deep_sort_realtime
 pip install opencv-python
 pip install requests
+
+
+#ngrok setting
+cd ~
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm64.zip
+unzip ngrok-stable-linux-arm64.zip
+chmod +x ngrok
+./ngrok version
+/ngrok config add-aututoken^C
