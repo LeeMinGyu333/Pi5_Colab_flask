@@ -17,10 +17,8 @@ pip install requests
 
 #ngrok setting
 cd ~
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm64.zip
-unzip ngrok-stable-linux-arm64.zip
-chmod +x ngrok
-./ngrok version
-/ngrok config add-aututoken^C
+curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && \
+  echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list && \
+  sudo apt update && sudo apt install ngrok
 ./ngrok authtoken 2yoIjXbMUtHCNk8MgxhKZMxODGd_7EiTpsT4Frm5CZVx47sit
 ./ngrok http 5000
